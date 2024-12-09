@@ -1,11 +1,10 @@
 # CCTV
-A CCTV application written in python for continuous monitoring.
-This application can be run on a raspberry pi with a usb webcam and an external storage drive.
+A simple CCTV application written in python for continuous monitoring.
 
 ## Setup
 
-Hardware: USB or IP cam.
-Software: pip install opencv-python or sudo apt install python3-opencv
-
+Hardware: USB or IP cam. external storage drive(HDD/SSD)<br>
+Software: pip install opencv-python or sudo apt install python3-opencv<br>
+Run:<br>
 python3 CCTV.py
 
