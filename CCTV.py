@@ -4,6 +4,7 @@ import time
 import datetime
 
 
+
 #Camera setup
 cap = cv2.VideoCapture(0)
 width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)) + 100
@@ -23,13 +24,14 @@ outDir = '/PATH/TO/EXTERNAL/DRIVE' +'/CCTV/'
 #Set Frame rate
 frameRate = 20
 
-
+#Main Function loop
 def CCTV():
     loop = True
     clipNumber = 0
 
     while loop:
         frame_time = int(0)
+        #File and folder name variable and checks
         current_day = datetime.datetime.now().strftime("%d-%m-%Y")
         today_directory = outDir + current_day
         
